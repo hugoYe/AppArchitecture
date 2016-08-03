@@ -4,6 +4,7 @@ buildscript {
     repositories {
         // 内网maven库
         maven { url "http://maven.ipo.com/nexus/content/groups/public/" }
+        //        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.0'
@@ -18,6 +19,7 @@ allprojects {
     repositories {
         // 内网maven库
         maven { url "http://maven.ipo.com/nexus/content/groups/public/" }
+        //        jcenter()
     }
 }
 

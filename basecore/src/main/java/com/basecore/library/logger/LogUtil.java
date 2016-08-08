@@ -3,6 +3,8 @@ package com.basecore.library.logger;
 import android.content.Context;
 import android.util.Log;
 
+import com.basecore.library.BuildConfig;
+
 import java.util.HashMap;
 
 
@@ -10,8 +12,8 @@ public class LogUtil {
 
     private Context mContext;
 
-    private static boolean isLogger = false; //是否打日志
-    private static boolean isLoggerFormat = false;  //是否输出Logger格式的日志
+    private static boolean isLogger = BuildConfig.DEBUG;    //是否打日志，默认debug模式下输出日志，release版本则默认关闭
+    private static boolean isLoggerFormat = false;      //是否输出Logger格式的日志
     private static HashMap<String, Long> oldTimeMap = new HashMap<String, Long>();
 
 

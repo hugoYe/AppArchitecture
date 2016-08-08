@@ -84,71 +84,33 @@ public class BaseActivity extends Activity implements View.OnClickListener {
                 LogUtil.v("yezhennan3", "Log v sample !");
                 LogUtil.wtf("yezhennan4", "Log wtf sample !");
                 LogUtil.e("yezhennan5", "Log e sample !");
-                LogUtil.json("{\n" +
-                        "\"code\": 0,\n" +
-                        "\"msg\": \"success\",\n" +
-                        "\"data\": {\n" +
-                        "\"sToken\": \"5db09c3d69e358abeb975cf38b46f589\",\n" +
-                        "\"sLogoutUrl\": \"http://crm.jiangqiuling.dev2.anhouse.com.cn/ydyx/service/auth/logout\",\n" +
-                        "\"menuList\": [\n" +
-                        "{\n" +
-                        "\"name\": \"销售管理\",\n" +
-                        "\"child\": [\n" +
-                        "{\n" +
-                        "\"name\": \"查看客户信息\",\n" +
-                        "\"url\": \"http://crm.jiangqiuling.dev2.anhouse.com.cn/ydyx/customer/query\",\n" +
-                        "\"type\": \"h5\"\n" +
-                        "},\n" +
-                        "{\n" +
-                        "\"name\": \"查看交易信息\",\n" +
-                        "\"url\": \"http://crm.jiangqiuling.dev2.anhouse.com.cn/ydyx/trade/query\",\n" +
-                        "\"type\": \"h5\"\n" +
-                        "}\n" +
-                        "]\n" +
-                        "},\n" +
-                        "{\n" +
-                        "\"name\": \"客户管理\",\n" +
-                        "\"child\": [\n" +
-                        "{\n" +
-                        "\"name\": \"登记客户信息\",\n" +
-                        "\"url\": \"window.WebViewJavascriptBridge.callHandler('ydyxAndroidScan', {\\\"type\\\":1,\\\"submitUrl\\\":\\\"http:\\\\/\\\\/crm.jiangqiuling.dev2.anhouse.com.cn\\\\/ydyx\\\\/user\\\\/login\\\",\\\"asyncUrl\\\":\\\"\\\"}, function(responseData) {\\r\\n                        //document.getElementById(\\\"show\\\").innerHTML = \\\"send get responseData from java, data = \\\" + responseData;\\r\\n       })\",\n" +
-                        "\"type\": \"js\"\n" +
-                        "},\n" +
-                        "{\n" +
-                        "\"name\": \"当前客户详情\",\n" +
-                        "\"url\": \"http://crm.jiangqiuling.dev2.anhouse.com.cn/ydyx/user/detail/%7BuserID%7D\",\n" +
-                        "\"type\": \"h5\"\n" +
-                        "}\n" +
-                        "]\n" +
-                        "},\n" +
-                        "{\n" +
-                        "\"name\": \"产品管理\",\n" +
-                        "\"child\": [\n" +
-                        "{\n" +
-                        "\"name\": \"好房宝\",\n" +
-                        "\"url\": \"http://hfb.jiangqiuling.dev2.anhouse.com.cn/info/my.htm\",\n" +
-                        "\"type\": \"h5\"\n" +
-                        "},\n" +
-                        "{\n" +
-                        "\"name\": \"好房贷\",\n" +
-                        "\"url\": \"\",\n" +
-                        "\"type\": \"h5\"\n" +
-                        "},\n" +
-                        "{\n" +
-                        "\"name\": \"安安租\",\n" +
-                        "\"url\": \"\",\n" +
-                        "\"type\": \"h5\"\n" +
-                        "},\n" +
-                        "{\n" +
-                        "\"name\": \"二手房\",\n" +
-                        "\"url\": \"\",\n" +
-                        "\"type\": \"h5\"\n" +
-                        "}\n" +
-                        "]\n" +
-                        "}\n" +
-                        "]\n" +
-                        "}\n" +
-                        "}");
+                LogUtil.json("{ \"programmers\": [\n" +
+                        "\n" +
+                        "{ \"firstName\": \"Brett\", \"lastName\":\"McLaughlin\", \"email\": \"aaaa\" },\n" +
+                        "\n" +
+                        "{ \"firstName\": \"Jason\", \"lastName\":\"Hunter\", \"email\": \"bbbb\" },\n" +
+                        "\n" +
+                        "{ \"firstName\": \"Elliotte\", \"lastName\":\"Harold\", \"email\": \"cccc\" }\n" +
+                        "\n" +
+                        "],\n" +
+                        "\n" +
+                        "\"authors\": [\n" +
+                        "\n" +
+                        "{ \"firstName\": \"Isaac\", \"lastName\": \"Asimov\", \"genre\": \"science fiction\" },\n" +
+                        "\n" +
+                        "{ \"firstName\": \"Tad\", \"lastName\": \"Williams\", \"genre\": \"fantasy\" },\n" +
+                        "\n" +
+                        "{ \"firstName\": \"Frank\", \"lastName\": \"Peretti\", \"genre\": \"christian fiction\" }\n" +
+                        "\n" +
+                        "],\n" +
+                        "\n" +
+                        "\"musicians\": [\n" +
+                        "\n" +
+                        "{ \"firstName\": \"Eric\", \"lastName\": \"Clapton\", \"instrument\": \"guitar\" },\n" +
+                        "\n" +
+                        "{ \"firstName\": \"Sergei\", \"lastName\": \"Rachmaninoff\", \"instrument\": \"piano\" }\n" +
+                        "\n" +
+                        "] }");
                 break;
 
             case SAMPLE_LEAKCANARY:

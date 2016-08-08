@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.basecore.library.BuildConfig;
+import com.basecore.library.logger.source.Logger;
 
 import java.util.HashMap;
 

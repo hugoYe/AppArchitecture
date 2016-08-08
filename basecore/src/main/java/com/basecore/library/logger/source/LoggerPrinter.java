@@ -1,4 +1,4 @@
-package com.basecore.library.logger;
+package com.basecore.library.logger.source;
 
 import android.text.TextUtils;
 import android.util.Log;

@@ -1,4 +1,4 @@
-package com.basecore.library.logger;
+package com.basecore.library.logger.source;
 
 /**
  * Logger is a wrapper of {@link android.util.Log}

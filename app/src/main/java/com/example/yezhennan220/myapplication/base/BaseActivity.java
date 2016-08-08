@@ -16,6 +16,7 @@ import com.example.yezhennan220.myapplication.R;
 import com.example.yezhennan220.myapplication.annotation.UseCaseTracker;
 import com.example.yezhennan220.myapplication.butterknife.ButterKnifeActivity;
 import com.example.yezhennan220.myapplication.jsInteration.JsInterationActivity;
+import com.example.yezhennan220.myapplication.leakcanary.LeakCanaryActivity;
 
 public class BaseActivity extends Activity implements View.OnClickListener {
 
@@ -23,8 +24,9 @@ public class BaseActivity extends Activity implements View.OnClickListener {
     private static final int SAMPLE_ANNOTATION = 1;
     private static final int SAMPLE_BUTTER_KNIFE = 2;
     private static final int SAMPLE_LOGGER = 3;
+    private static final int SAMPLE_LEAKCANARY = 4;
 
-    private static String sSampleList[] = {"JsInteration Sample", "Annotation Sample", "Butter Knife Sample", "Logger Sample"};
+    private static String sSampleList[] = {"JsInteration Sample", "Annotation Sample", "Butter Knife Sample", "Logger Sample", "LeakCanary Sample"};
 
     private static boolean loggerFormatter;
 
@@ -147,6 +149,10 @@ public class BaseActivity extends Activity implements View.OnClickListener {
                         "]\n" +
                         "}\n" +
                         "}");
+                break;
+
+            case SAMPLE_LEAKCANARY:
+                startActivity(new Intent(this, LeakCanaryActivity.class));
                 break;
         }
     }
